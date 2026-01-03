@@ -9,40 +9,41 @@
     <header><h1>Travel Reservation Form</h1></header>
     <main>
       <section class="reservation form">
+        <h2>Reservation Form</h2>
         <div style="max-width: fit-content">
           <form action="submit" method="post">
             <fieldset class="personal information">
               <legend>Personal Information</legend>
               <label for="name">Full Name:</label>
-              <input type="full-name" id="name" name="full-name" />
+              <input type="text" id="name" name="full-name" />
               <br />
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" />
               <br />
               <label for="phone">Phone:</label>
-              <input type="phone" name="phone" id="phone" />
+              <input type="tel" name="phone" id="phone" />
               <br />
             </fieldset>
 
             <fieldset>
               <legend>Travel Information</legend>
               <label for="package">Select Package:</label>
-              <select name="packae" id="package">
+              <select name="package" id="package">
                 <option value="package-1">Package 1</option>
                 <option value="package-2">Package 2</option>
               </select>
               <br />
               <label for="destination">Destination:</label>
-              <input type="destination" id="destination" name="destination" />
+              <input type="text" id="destination" name="destination" />
             </fieldset>
 
             <fieldset>
-              <label for="date">Arrival Date:</label>
-              <input type="date" name="date" id="date" />
+              <label for="arrival-date">Arrival Date:</label>
+              <input type="date" name="date" id="arrival-date" />
               <br />
 
-              <label for="date">Departure Date:</label>
-              <input type="date" name="date" id="date" />
+              <label for="departure-date">Departure Date:</label>
+              <input type="date" name="date" id="departure-date" />
             </fieldset>
 
             <fieldset>
