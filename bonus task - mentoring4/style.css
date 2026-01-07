@@ -69,7 +69,7 @@ nav a:hover {
 /* Layout */
 .container {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: minmax(600px, 1fr) 320px;
   gap: 2rem;
   max-width: 1200px;
   margin: 2rem auto;
@@ -84,24 +84,16 @@ nav a:hover {
 
 /* Main Content */
 .glass-panel {
-  /* background: var(--glass-bg);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--glass-border);
-  border-radius: 24px;
-  box-shadow: var(--card-shadow);
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem; */
-
   background: var(--glass-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--glass-border);
   border-radius: 24px;
   padding: 2rem;
+  margin: auto;
+  margin-left: 2rem;
   margin-bottom: 2rem;
-  max-width: 900px;
+  max-width: 720px;
   box-shadow: var(--card-shadow);
 }
 
@@ -267,6 +259,7 @@ textarea:focus {
 /* Aside */
 aside .widget {
   margin-bottom: 2rem;
+  width: 320px;
 }
 
 aside h3 {
@@ -280,11 +273,21 @@ aside ul {
 }
 
 aside li {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 1rem;
+
   margin-bottom: 0.8rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid var(--glass-border);
+
+  /* margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  grid-template-columns: 50px 1fr;
+  border-bottom: 1px solid var(--glass-border);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 aside time {
