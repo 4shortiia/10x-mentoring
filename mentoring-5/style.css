@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f7;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 16px 8px 16px 8px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: white;
+  display: block;
+  width: 320px;
+  height: 497px;
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+  margin: 152px 560px 151px 560px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* .card-title {
+  width: 254;
+  height: 54;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 129%;
+  letter-spacing: 2.5%;
+  text-align: center;
+  margin: 25px 17px 41px 25px;
+  padding: 329px 33px 114px 33px;
+} */
+
+.card-title {
+  width: 254;
+  height: 54;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 129%;
+  color: #1f314f;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 2.5%;
+  /* max-width: 360px; */
+}
+
+/* .card-desc {
+  margin: 399px 33px 41px 33px;
+  color: #7d889e;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+  line-height: 129%;
+  letter-spacing: 1%;
+  text-align: center;
+} */
+
+.card-desc {
+  font-size: 15px;
+  color: #7d889e;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 1%;
+  font-style: Medium;
+  /* max-width: 280px; */
+  /* margin-top: 16px;
+  margin-left: 33px;
+  margin-right: 33px;
+  margin-bottom: 41px; */
+
+  margin: 16px;
+  margin-bottom: 41px;
+}
