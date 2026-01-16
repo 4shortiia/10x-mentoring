@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  justify-content: center;
+  text-align: center;
 }
 
 body {
@@ -9,9 +12,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   padding: 16px 8px 16px 8px;
-  justify-content: center;
-  text-align: center;
-  font-family: "Outfit", sans-serif;
 }
 
 .card-grid {
